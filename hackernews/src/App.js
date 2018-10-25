@@ -6,14 +6,17 @@ import Button from './components/Button.jsx'
 import Search from './components/Search.jsx'
 import Table from './components/Table.jsx'
 
-const DEFAULT_QUERY = 'redux'
-const DEFAULT_HPP = '100'
+import { DEFAULT_QUERY, DEFAULT_HPP, PATH_BASE, PATH_SEARCH, PARAM_SEARCH, PARAM_PAGE, PARAM_HPP } from './index.js'
 
-const PATH_BASE = 'https://hn.algolia.com/api/v1'
-const PATH_SEARCH = '/search'
-const PARAM_SEARCH = 'query='
-const PARAM_PAGE = 'page='
-const PARAM_HPP = 'hitsPerPage='
+// extracted these into the index file for export
+// const DEFAULT_QUERY = 'redux'
+// const DEFAULT_HPP = '100'
+
+// const PATH_BASE = 'https://hn.algolia.com/api/v1'
+// const PATH_SEARCH = '/search'
+// const PARAM_SEARCH = 'query='
+// const PARAM_PAGE = 'page='
+// const PARAM_HPP = 'hitsPerPage='
 
 // const url = `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}&${PARAM_HPP}${DEFAULT_HPP}`
 // console.log(url)
